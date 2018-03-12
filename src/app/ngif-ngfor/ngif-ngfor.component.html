@@ -1,0 +1,10 @@
+<h3 *ngIf="isShow">
+  ngIf
+</h3>
+
+<button class="btn btn-success" (click)="isShow = !isShow">Button Toggle</button>
+<hr>
+<h3>ngFor</h3>
+<ul class="list-group">
+	<li *ngFor="let subject of arrSubjects" class="list-group-item">{{ subject }}</li>
+</ul>

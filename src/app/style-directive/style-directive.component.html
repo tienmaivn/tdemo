@@ -1,0 +1,11 @@
+
+<input type="text" class="form-control" placeholder="Enter your name" [(ngModel)]="name" #txtName>
+<h2 [ngStyle]="name.length % 2 === 0 ? evenStyle : oddStyle">
+	Your Name is: {{ name }} (red or blue)
+</h2>
+
+<div [class]="isHightLight ? 'circle': 'square' "></div>
+<hr>
+<div [class.circle]="!isHightLight" [class.square]="isHightLight"></div>
+<hr>
+<div [ngClass]="currentClass"></div>

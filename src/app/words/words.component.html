@@ -1,0 +1,8 @@
+<div *ngFor="let word of arrWords" class="card">
+	<div class="card-header" [class.bg-info]="word.memorized" [class.bg-warning]="!word.memorized">
+		{{ word.en }}
+	</div>
+	<div class="card-body">
+		{{ word.vn }}
+	</div>
+</div>

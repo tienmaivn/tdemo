@@ -1,0 +1,7 @@
+<input type="text" class="form-control" placeholder="Enter your name" [(ngModel)]="name" #txtName>
+<h2 [style.color]="isHightLight ? 'red':'blue'">
+	Your Name is: {{ name }} (red or blue)
+</h2>
+
+<div [class]="isHightLight ? 'circle': 'square' "></div>
+<div [class.circle]="!isHightLight" [class.square]="isHightLight"></div>
